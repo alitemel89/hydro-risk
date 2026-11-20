@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HydroRisk · İzmir72</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,sans-serif;color:#ecf1f5;background:#0a1420}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 80% 0,#193a4b 0,transparent 40%),#0a1420}
+main{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:40px}
+.brand{font-size:21px;font-weight:800;letter-spacing:-.6px}.brand b{color:#5ce3cc}
+.tag{color:#9cbbc6;border:1px solid #355061;border-radius:40px;padding:8px 12px;font-size:12px}
+h1{font-size:clamp(33px,5vw,60px);max-width:760px;line-height:1.07;letter-spacing:-2px;margin:0 0 16px}
+.lead{color:#adc2cb;max-width:690px;line-height:1.6;font-size:16px;margin:0 0 32px}
+.panel{background:#102333db;border:1px solid #244557;border-radius:20px;padding:24px;box-shadow:0 24px 65px #0002;margin-top:20px}
+section h2{font-size:20px;margin:0 0 16px}label{display:block;font-size:13px;color:#a2bbc5;margin-bottom:7px}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:13px;align-items:end}
+select,input,button{min-height:43px;border-radius:11px;border:1px solid #456075;background:#0a1b2a;color:#eff7fc;padding:10px;font:inherit;width:100%}
+button{background:#5ce3cc;color:#062b2f;border:0;font-weight:800;cursor:pointer}button:disabled{opacity:.5;cursor:wait}
+.note{font-size:13px;color:#98b9c3;line-height:1.6}.error{color:#ffc1bd}.ok{color:#71e4bc}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.metric{background:#0c1a27;border:1px solid #284052;border-radius:15px;padding:21px}
+.metric .n{font-size:35px;font-weight:800;letter-spacing:-1px;margin:7px 0}.metric small{color:#9ebac6}
+.chart{overflow-x:auto}.bars{display:flex;align-items:end;gap:2px;height:158px;border-bottom:1px solid #456075;padding:10px 0 0}
+.bar{flex:1;background:linear-gradient(#5ce3cc,#2689ad);min-width:3px;border-radius:3px 3px 0 0}
+.hidden{display:none}.links a{color:#7adad0}footer{margin-top:30px;color:#94afba;font-size:13px;line-height:1.7}
+@media(max-width:700px){.controls{grid-template-columns:1fr 1fr}.controls .wide,.controls .action{grid-column:1/-1}.metrics{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}.metric .n{font-size:30px}}
+</style>
+</head>
+<body><main>
+<header><div class="brand">HYDRO<b>RISK</b> <span style="font-size:12px;color:#89a9b8">/ İZMİR72</span></div><div class="tag">Araştırma prototipi · v0.1</div></header>
+<h1>Önümüzdeki 72 saatin yağışını incele.</h1>
+<p class="lead">ECMWF IFS model tahminlerini İzmir çevresindeki noktalar için saatlik olarak gösteriyoruz. Veriler <b>taşkın tahmini veya resmî uyarı değildir.</b></p>
+<section class="panel"><h2>01 / Analiz noktası</h2>
+<div class="controls"><div class="wide"><label for="place">Konum seç</label><select id="place"><option value="custom">Özel koordinat</option></select></div>
+<div><label for="lat">Enlem (K)</label><input id="lat" type="number" min="-90" max="90" step="0.0001" value="38.4237"></div>
+<div><label for="lon">Boylam (D)</label><input id="lon" type="number" min="-180" max="180" step="0.0001" value="27.1428"></div>
+<div class="action"><button id="run">Tahmini getir</button></div></div>
+<p class="note" id="status" role="status">Gerçek veri talebi henüz yapılmadı.</p>
+</section>
+<section id="output" class="panel hidden" aria-live="polite"><h2>02 / Tahmin edilen yağış</h2>
+<div class="metrics"><div class="metric"><small>İlk 24 saat</small><div class="n" id="v24">—</div><small>Toplam yağış (mm)</small></div>
+<div class="metric"><small>İlk 48 saat</small><div class="n" id="v48">—</div><small>Toplam yağış (mm)</small></div>
+<div class="metric"><small>İlk 72 saat</small><div class="n" id="v72">—</div><small>Toplam yağış (mm)</small></div></div>
+<p class="note" id="info"></p><h2>03 / Saatlik yağış (mm)</h2><div class="chart"><div id="bars" class="bars" role="img" aria-label="72 saatlik yağış grafiği"></div></div>
+<p class="note">Her sütun bir önceki saatin toplam yağış miktarını gösterir. Toplam yağış, yağmur + sağanak + karın su eşdeğeridir. Kar dahil olduğunda sıvı yağış ayrı hesaplanır.</p>
+<button id="download" style="max-width:230px">JSON indir</button></section>
+<footer><div class="links">Kaynak: <a href="https://open-meteo.com/en/docs/ecmwf-api" target="_blank" rel="noopener noreferrer">Open-Meteo ECMWF API</a> · <a href="https://www.mgm.gov.tr" target="_blank" rel="noopener noreferrer">MGM resmî uyarılar</a></div>
+<p><b>Bilimsel sınır:</b> Bu uygulama yalnızca atmosferik yağış tahminini gösterir. Toprak, topoğrafya, kanal kapasitesi, dere taşması veya bina düzeyinde risk hesaplamaz. Otomatik kalibrasyon, doğrulama veya gerçek zamanlı uyarı içermez. Veri sağlanamazsa sayı uydurmaz.</p></footer>
+</main><script>
+const $=id=>document.getElementById(id);let latest=null;
+const places=[{name:'İzmir Merkez',lat:38.4237,lon:27.1428},{name:'Menderes',lat:38.2524,lon:27.1343},{name:'Bornova',lat:38.4664,lon:27.2190},{name:'Urla',lat:38.3236,lon:26.7640}];
+for(const p of places){let o=document.createElement('option');o.value=p.name;o.textContent=p.name;$('place').appendChild(o)}$('place').value='İzmir Merkez';
+$('place').addEventListener('change',()=>{const p=places.find(x=>x.name===$('place').value);if(p){$('lat').value=p.lat;$('lon').value=p.lon}});
+for (const f of ['lat','lon']) $(f).addEventListener('input',()=>{$('place').value='custom'});
+$('run').addEventListener('click',async()=>{
+ $('output').classList.add('hidden');latest=null;const lat=Number($('lat').value),lon=Number($('lon').value);
+ if(!$('lat').value||!$('lon').value||!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180){$('status').textContent='Geçerli enlem ve boylam girin.';$('status').className='note error';return}
+ $('run').disabled=true;$('status').className='note';$('status').textContent='ECMWF model verisi getiriliyor…';
+ try{const res=await fetch('/api/forecast?lat='+encodeURIComponent(lat)+'&lon='+encodeURIComponent(lon),{cache:'no-store'});const data=await res.json();if(!res.ok)throw new Error(data.detail||'Tahmin sunucusu yanıt vermedi');
+ latest=data;for(const n of [24,48,72])$('v'+n).textContent=data.totals_mm[n].total_precipitation_mm.toLocaleString('tr-TR',{maximumFractionDigits:2});
+ $('info').textContent='Model: '+data.model_requested+' · İlk aralık bitişi: '+data.hourly[0].time_utc+' · İstek: '+data.requested_at_utc+' · Operasyonel model başlangıç saati doğrulanmadı.';
+ const max=Math.max(...data.hourly.map(h=>h.precipitation_mm),1);$('bars').replaceChildren();for(const h of data.hourly){const b=document.createElement('div');b.className='bar';b.style.height=Math.max(2,h.precipitation_mm/max*100)+'%';b.title=h.time_utc+': '+h.precipitation_mm+' mm';$('bars').appendChild(b)}
+ $('output').classList.remove('hidden');$('status').textContent='72 saatlik model tahmini yüklendi; taşkın uyarısı değildir.';$('status').className='note ok';
+ }catch(e){$('status').textContent='Veri gösterilemiyor: '+e.message;$('status').className='note error';}finally{$('run').disabled=false}
+});
+$('download').addEventListener('click',()=>{if(!latest)return;const blob=new Blob([JSON.stringify(latest,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='hydrorisk-izmir72-ecmwf.json';a.click();URL.revokeObjectURL(url)});
+</script></body></html>
