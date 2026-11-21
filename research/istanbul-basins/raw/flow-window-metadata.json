@@ -1,0 +1,25 @@
+{
+  "rows": 1441,
+  "cols": 3841,
+  "originX": 27.399583333046454,
+  "originY": 41.80041666636804,
+  "dx": 0.0008333333333430174,
+  "dy": -0.0008333333333146351,
+  "hashes": {
+    "part1.bin.gz": "05a31746635e3c54ceb42939dc79b15654eb1a88e511c4f5f6b3ac796d145eb3",
+    "part2.bin.gz": "a5ed31eae90ea85615f9b75c04b393615df055ccc9eddd5ecca58d3a5d458340"
+  },
+  "directionCodes": {
+    "1": "E",
+    "2": "SE",
+    "3": "S",
+    "4": "SW",
+    "5": "W",
+    "6": "NW",
+    "7": "N",
+    "8": "NE"
+  },
+  "source": "https://hab.suen.gov.tr/",
+  "dataSource": "MERIT Hydro v1.0.1, Yamazaki et al. 2019",
+  "license": "ODbL-1.0"
+}

@@ -1,0 +1,1094 @@
+{
+  "site": "Hydro Risk",
+  "site_url": "https://hydro-risk.aylintemel-de.chatgpt.site",
+  "site_project_id": "appgprj_6ac76d5e0bcc8191bf78af7e505fd3f5",
+  "version": 19,
+  "version_id": "appgprj_6ac76d5e0bcc8191bf78af7e505fd3f5~appgver_1f887a02805881919dc6ce7790b94ef5",
+  "deployment_id": "appgdep_6ad76b9886048191943b0ea91cedc6c2",
+  "deployment_status": "succeeded",
+  "source_commit": "3c7888f430d5f4e6ff7f7bbc017f6d92606d3f58",
+  "export_date": "2026-11-20",
+  "github_branch": "dev/sites-v19-export-2026-11-20",
+  "site_mutated": false,
+  "live_database_exported": false,
+  "original_tracked_entries": 152,
+  "excluded_entries": [
+    {
+      "path": "node_modules",
+      "reason": "Machine-local dependency symlink; dependencies are reproducible through package-lock.json."
+    }
+  ],
+  "adaptations": [
+    {
+      "path": ".env.example",
+      "reason": "Removed example password/connection string; environment names and empty placeholders retained."
+    },
+    {
+      "path": "compose.yaml",
+      "reason": "Replaced literal development password with required POSTGRES_PASSWORD environment substitution."
+    },
+    {
+      "path": "tests/istanbul-baseline.test.mjs",
+      "reason": "Verify current source against recorded baseline hashes without requiring original Sites Git history."
+    }
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "source_sha256": "e397c9829ae01411d51441ffc59bb93da0cb9dcd23043000ca8b35216aa006be",
+      "export_sha256": "b332ddff1c7e0d49b0a9f802bd491b614518736c4f7ec07691ebe30d5d33593b",
+      "byte_identical": false,
+      "size_bytes": 81
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "source_sha256": "07ceaa44887bb22a6c851b848907b3ae0e03b5a7fd4dcb5fe7469f2cebeee6b7",
+      "export_sha256": "07ceaa44887bb22a6c851b848907b3ae0e03b5a7fd4dcb5fe7469f2cebeee6b7",
+      "byte_identical": true,
+      "size_bytes": 323
+    },
+    {
+      "path": ".gitignore",
+      "source_sha256": "b6e2ff98fe0ef9d662ea91b1aaad4c6d1ca65bba53821cb8aa44a74d70f8bea3",
+      "export_sha256": "b6e2ff98fe0ef9d662ea91b1aaad4c6d1ca65bba53821cb8aa44a74d70f8bea3",
+      "byte_identical": true,
+      "size_bytes": 246
+    },
+    {
+      "path": ".openai/hosting.json",
+      "source_sha256": "82c3481fc4c87f8b868e4aac4e1cd25343013706a7770a828b77d2a487382925",
+      "export_sha256": "82c3481fc4c87f8b868e4aac4e1cd25343013706a7770a828b77d2a487382925",
+      "byte_identical": true,
+      "size_bytes": 91
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "780569ee75aaf7adfbf9cb2ff65096d1fd79881a993d446512256712cd28fa71",
+      "export_sha256": "780569ee75aaf7adfbf9cb2ff65096d1fd79881a993d446512256712cd28fa71",
+      "byte_identical": true,
+      "size_bytes": 10272
+    },
+    {
+      "path": "angular.json",
+      "source_sha256": "3f8eebd25f3886a3000dd932b59d950588395b77059bf5545fbb4e48b96457f8",
+      "export_sha256": "3f8eebd25f3886a3000dd932b59d950588395b77059bf5545fbb4e48b96457f8",
+      "byte_identical": true,
+      "size_bytes": 1065
+    },
+    {
+      "path": "apps/api/project.json",
+      "source_sha256": "9bbb8f564bc8af95db4b5c149b6fb8c70889f8164c26d4db375a2ce2c103c46e",
+      "export_sha256": "9bbb8f564bc8af95db4b5c149b6fb8c70889f8164c26d4db375a2ce2c103c46e",
+      "byte_identical": true,
+      "size_bytes": 119
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "source_sha256": "5bd5bdff4bb1dd5f0ca365dc3f2d0860bd5568ce82e64c3adc2ecb4af0c027c5",
+      "export_sha256": "5bd5bdff4bb1dd5f0ca365dc3f2d0860bd5568ce82e64c3adc2ecb4af0c027c5",
+      "byte_identical": true,
+      "size_bytes": 2393
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "source_sha256": "48f17b84d230d0f6ebe0044fb8176099cbd2c361577c19ba362579fd491e53e8",
+      "export_sha256": "48f17b84d230d0f6ebe0044fb8176099cbd2c361577c19ba362579fd491e53e8",
+      "byte_identical": true,
+      "size_bytes": 297
+    },
+    {
+      "path": "apps/web/project.json",
+      "source_sha256": "0c8609f4129c0abd143d5323dfa1ed51a71157f4e87fd78b9c8b6e880a59957f",
+      "export_sha256": "0c8609f4129c0abd143d5323dfa1ed51a71157f4e87fd78b9c8b6e880a59957f",
+      "byte_identical": true,
+      "size_bytes": 102
+    },
+    {
+      "path": "apps/web/proxy.json",
+      "source_sha256": "44950745e0982bc31280361f980d0669b947dbb27090ccc7f9c92425a042d1b5",
+      "export_sha256": "44950745e0982bc31280361f980d0669b947dbb27090ccc7f9c92425a042d1b5",
+      "byte_identical": true,
+      "size_bytes": 85
+    },
+    {
+      "path": "apps/web/src/index.html",
+      "source_sha256": "75db7c9f107ce5b51f336bb6553ce84d1335635b699718cfc482243a4f2c16c1",
+      "export_sha256": "75db7c9f107ce5b51f336bb6553ce84d1335635b699718cfc482243a4f2c16c1",
+      "byte_identical": true,
+      "size_bytes": 727
+    },
+    {
+      "path": "apps/web/src/main.ts",
+      "source_sha256": "91c7da6b267d42a8e908e1367327624bf90fca298a52a08461a81d0e4f4b5516",
+      "export_sha256": "91c7da6b267d42a8e908e1367327624bf90fca298a52a08461a81d0e4f4b5516",
+      "byte_identical": true,
+      "size_bytes": 49874
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "source_sha256": "49c8acc8951551cb673531b23ab3066b0f6071d1d23b22e9bce9bf2a7e3ee8be",
+      "export_sha256": "49c8acc8951551cb673531b23ab3066b0f6071d1d23b22e9bce9bf2a7e3ee8be",
+      "byte_identical": true,
+      "size_bytes": 28386
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "source_sha256": "cdc1e8fbc13fc0853de117c0f1a8415c9fe41285b38c8ad53c63e3a57770ca94",
+      "export_sha256": "cdc1e8fbc13fc0853de117c0f1a8415c9fe41285b38c8ad53c63e3a57770ca94",
+      "byte_identical": true,
+      "size_bytes": 249
+    },
+    {
+      "path": "compose.yaml",
+      "source_sha256": "4fa9f1c5348ea7f124ea78f279abae91bd73b31104b9d7d4921565ca04fc41ef",
+      "export_sha256": "903a0965f270a0b28e78cebb2b0620f8733b77f7c604229bb1e7fa10fd8e81fd",
+      "byte_identical": false,
+      "size_bytes": 431
+    },
+    {
+      "path": "database/migrate.mjs",
+      "source_sha256": "dd766d2b3e6a4069e82788a92b76d8b01d3613a30274e23cfeb4087116e84e2e",
+      "export_sha256": "dd766d2b3e6a4069e82788a92b76d8b01d3613a30274e23cfeb4087116e84e2e",
+      "byte_identical": true,
+      "size_bytes": 384
+    },
+    {
+      "path": "database/migrations/001_areas.sql",
+      "source_sha256": "f60bba1309da233f6890efc2f85141080946acc5156aedb51b2924fb73f6c528",
+      "export_sha256": "f60bba1309da233f6890efc2f85141080946acc5156aedb51b2924fb73f6c528",
+      "byte_identical": true,
+      "size_bytes": 454
+    },
+    {
+      "path": "db/schema.ts",
+      "source_sha256": "f788290362c7500ea0c7632b8138463c4b63c8fc14f4ed816d944768f773ca8d",
+      "export_sha256": "f788290362c7500ea0c7632b8138463c4b63c8fc14f4ed816d944768f773ca8d",
+      "byte_identical": true,
+      "size_bytes": 691
+    },
+    {
+      "path": "drizzle.config.ts",
+      "source_sha256": "09e793081a6d4e69c9d59cdab4941a17293048c4b2db8963d7a0ca4fccc8ede0",
+      "export_sha256": "09e793081a6d4e69c9d59cdab4941a17293048c4b2db8963d7a0ca4fccc8ede0",
+      "byte_identical": true,
+      "size_bytes": 131
+    },
+    {
+      "path": "drizzle/0000_high_quasimodo.sql",
+      "source_sha256": "2bc156e9ddbdd481f55196273fabaa7f567bf9e2f12dd2c87c76652f7b5c9aca",
+      "export_sha256": "2bc156e9ddbdd481f55196273fabaa7f567bf9e2f12dd2c87c76652f7b5c9aca",
+      "byte_identical": true,
+      "size_bytes": 164
+    },
+    {
+      "path": "drizzle/0001_flawless_serpent_society.sql",
+      "source_sha256": "34ef7142650dbc19f9b7e51dad02c038521bf6ed93134ef039f2b44c091beace",
+      "export_sha256": "34ef7142650dbc19f9b7e51dad02c038521bf6ed93134ef039f2b44c091beace",
+      "byte_identical": true,
+      "size_bytes": 288
+    },
+    {
+      "path": "drizzle/meta/0000_snapshot.json",
+      "source_sha256": "d9df13a9afc4405dedd014a796122c6bc4c693527bcf4484d3fb656f3a9b043e",
+      "export_sha256": "d9df13a9afc4405dedd014a796122c6bc4c693527bcf4484d3fb656f3a9b043e",
+      "byte_identical": true,
+      "size_bytes": 1398
+    },
+    {
+      "path": "drizzle/meta/0001_snapshot.json",
+      "source_sha256": "e0405f1dce46177fd3f9f2635ba85885ffe6ecd7ae5e5fe76ada00aaa1917752",
+      "export_sha256": "e0405f1dce46177fd3f9f2635ba85885ffe6ecd7ae5e5fe76ada00aaa1917752",
+      "byte_identical": true,
+      "size_bytes": 3432
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "source_sha256": "dac66958113b1035fad562ee2fccba37efad7142bf35de97fb0995c922059962",
+      "export_sha256": "dac66958113b1035fad562ee2fccba37efad7142bf35de97fb0995c922059962",
+      "byte_identical": true,
+      "size_bytes": 356
+    },
+    {
+      "path": "libs/shared/src/area.ts",
+      "source_sha256": "e9c0a725c2da28ac25cce180cb08848906c62519528c43c7bec29e1eb4aba9e9",
+      "export_sha256": "e9c0a725c2da28ac25cce180cb08848906c62519528c43c7bec29e1eb4aba9e9",
+      "byte_identical": true,
+      "size_bytes": 229
+    },
+    {
+      "path": "libs/shared/src/validate-area.mjs",
+      "source_sha256": "2a60471ba1104a567e1fc75c3babf1ed7a5ca28d9662614703b4164bf7460c83",
+      "export_sha256": "2a60471ba1104a567e1fc75c3babf1ed7a5ca28d9662614703b4164bf7460c83",
+      "byte_identical": true,
+      "size_bytes": 1123
+    },
+    {
+      "path": "licenses/ege-boundaries-LICENSE.txt",
+      "source_sha256": "7a998d5bde9a0ffb8318a2c3a8f560be18a6a8c0190966450f8adb75f407167e",
+      "export_sha256": "7a998d5bde9a0ffb8318a2c3a8f560be18a6a8c0190966450f8adb75f407167e",
+      "byte_identical": true,
+      "size_bytes": 1081
+    },
+    {
+      "path": "nx.json",
+      "source_sha256": "f03d96a0226950e81fe8a56b73317356ec0340d3a69415e965f215f5318a29d3",
+      "export_sha256": "f03d96a0226950e81fe8a56b73317356ec0340d3a69415e965f215f5318a29d3",
+      "byte_identical": true,
+      "size_bytes": 57
+    },
+    {
+      "path": "package-lock.json",
+      "source_sha256": "aef6784524173b95e3b807bb53b6bf9b9cb6a521449040c49a71e133e89b5b7e",
+      "export_sha256": "aef6784524173b95e3b807bb53b6bf9b9cb6a521449040c49a71e133e89b5b7e",
+      "byte_identical": true,
+      "size_bytes": 377919
+    },
+    {
+      "path": "package.json",
+      "source_sha256": "d26509adfeba9a39e6742a5095f0295b79f5b324cf0da2e603dc4a8d6214cf39",
+      "export_sha256": "d26509adfeba9a39e6742a5095f0295b79f5b324cf0da2e603dc4a8d6214cf39",
+      "byte_identical": true,
+      "size_bytes": 1215
+    },
+    {
+      "path": "research/istanbul-2026/README.md",
+      "source_sha256": "ae7a4f50b8882a42cdbe34c309632e3acc1715b2c55af7e32a99b26838afb87e",
+      "export_sha256": "ae7a4f50b8882a42cdbe34c309632e3acc1715b2c55af7e32a99b26838afb87e",
+      "byte_identical": true,
+      "size_bytes": 2808
+    },
+    {
+      "path": "research/istanbul-2026/fetch-inputs.mjs",
+      "source_sha256": "f739e15a7ddba883ab2e0dfd7dda69089afca2b8954f32b45f43021eda927d1a",
+      "export_sha256": "f739e15a7ddba883ab2e0dfd7dda69089afca2b8954f32b45f43021eda927d1a",
+      "byte_identical": true,
+      "size_bytes": 2656
+    },
+    {
+      "path": "research/istanbul-2026/fetch-observations.mjs",
+      "source_sha256": "5b9b649fc03c45474f656262980e995890373dd36385db27aa02668646f8781c",
+      "export_sha256": "5b9b649fc03c45474f656262980e995890373dd36385db27aa02668646f8781c",
+      "byte_identical": true,
+      "size_bytes": 1833
+    },
+    {
+      "path": "research/istanbul-2026/manifest.json",
+      "source_sha256": "4029ba318068621489d30ef647fa314473c97f499c222a75737155d87ff1cb10",
+      "export_sha256": "4029ba318068621489d30ef647fa314473c97f499c222a75737155d87ff1cb10",
+      "byte_identical": true,
+      "size_bytes": 30579
+    },
+    {
+      "path": "research/istanbul-2026/observation-sources.json",
+      "source_sha256": "54e8a4036b3148d69dfee90165a4fe5b97c244046a5c9687d4c7fd266f6f0dd9",
+      "export_sha256": "54e8a4036b3148d69dfee90165a4fe5b97c244046a5c9687d4c7fd266f6f0dd9",
+      "byte_identical": true,
+      "size_bytes": 854
+    },
+    {
+      "path": "research/istanbul-2026/observations.json",
+      "source_sha256": "e34e4c2ce6344dbf46ab3b4cf52a22bb28f7c760eb15cee2519ad300c3ec76bf",
+      "export_sha256": "e34e4c2ce6344dbf46ab3b4cf52a22bb28f7c760eb15cee2519ad300c3ec76bf",
+      "byte_identical": true,
+      "size_bytes": 4837
+    },
+    {
+      "path": "research/istanbul-2026/raw/mgm-2026-10-14.json",
+      "source_sha256": "53c89e3c3442eaa83c51249682784e753689006d1f19cba65de5e95a26413914",
+      "export_sha256": "53c89e3c3442eaa83c51249682784e753689006d1f19cba65de5e95a26413914",
+      "byte_identical": true,
+      "size_bytes": 8345
+    },
+    {
+      "path": "research/istanbul-2026/raw/mgm-2026-10-15.json",
+      "source_sha256": "f51b7f7eecdaff5b0c078431f294c271c3f52d1018961199d269b5c8823bcac8",
+      "export_sha256": "f51b7f7eecdaff5b0c078431f294c271c3f52d1018961199d269b5c8823bcac8",
+      "byte_identical": true,
+      "size_bytes": 8367
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-arnavutkoy.json",
+      "source_sha256": "821596b1d9d8909ca53e01f87fc888d03e06c8937c51407c705777d6084ec624",
+      "export_sha256": "821596b1d9d8909ca53e01f87fc888d03e06c8937c51407c705777d6084ec624",
+      "byte_identical": true,
+      "size_bytes": 25995
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-beykoz.json",
+      "source_sha256": "aabb92241e7711b2b920dde53bd9b4d35e1c22c075ecf065d50b72ebaeb78528",
+      "export_sha256": "aabb92241e7711b2b920dde53bd9b4d35e1c22c075ecf065d50b72ebaeb78528",
+      "byte_identical": true,
+      "size_bytes": 16845
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-cebeci.json",
+      "source_sha256": "2458efa9befeec7beb33ac3200e46bb028b5244bf122e9e579d7ec030b17c731",
+      "export_sha256": "2458efa9befeec7beb33ac3200e46bb028b5244bf122e9e579d7ec030b17c731",
+      "byte_identical": true,
+      "size_bytes": 9839
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-eyupsultan.json",
+      "source_sha256": "b0d583b1b6ff7b58423ab9a489e064ec110acb245e96cc697bd3cef44ed696c5",
+      "export_sha256": "b0d583b1b6ff7b58423ab9a489e064ec110acb245e96cc697bd3cef44ed696c5",
+      "byte_identical": true,
+      "size_bytes": 11085
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-maslak.json",
+      "source_sha256": "03667b3ebbce7afae7dbdd743ff306b20a5e607f25d3ee37e3f6310f8036d168",
+      "export_sha256": "03667b3ebbce7afae7dbdd743ff306b20a5e607f25d3ee37e3f6310f8036d168",
+      "byte_identical": true,
+      "size_bytes": 127226
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-corine-sariyer.json",
+      "source_sha256": "a7a62fb9e2d3589b1dea110e3cc9e5c8ef1d561b3159f2e12da9445b4af1e3a9",
+      "export_sha256": "a7a62fb9e2d3589b1dea110e3cc9e5c8ef1d561b3159f2e12da9445b4af1e3a9",
+      "byte_identical": true,
+      "size_bytes": 17270
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-11T00-00.json",
+      "source_sha256": "3d619e086af404efcf0ee757d8b983e2de49ab24e67db6a487eae32df9445b8a",
+      "export_sha256": "3d619e086af404efcf0ee757d8b983e2de49ab24e67db6a487eae32df9445b8a",
+      "byte_identical": true,
+      "size_bytes": 26444
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-12T00-00.json",
+      "source_sha256": "766ea53dd93c96bcfc8b1a5e1cda27d3348ee8a4985d87364af6200c80faa6eb",
+      "export_sha256": "766ea53dd93c96bcfc8b1a5e1cda27d3348ee8a4985d87364af6200c80faa6eb",
+      "byte_identical": true,
+      "size_bytes": 26448
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-12T12-00.json",
+      "source_sha256": "635b53bfd083c1aa850b8eb89cd2da33127fb756551cb39413ebed8b1d1423d5",
+      "export_sha256": "635b53bfd083c1aa850b8eb89cd2da33127fb756551cb39413ebed8b1d1423d5",
+      "byte_identical": true,
+      "size_bytes": 26443
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-13T00-00.json",
+      "source_sha256": "7cc78587f2adf40b742b68c6a393f50300e108e9aaf86d7052c7704f851459ef",
+      "export_sha256": "7cc78587f2adf40b742b68c6a393f50300e108e9aaf86d7052c7704f851459ef",
+      "byte_identical": true,
+      "size_bytes": 26444
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-13T12-00.json",
+      "source_sha256": "3f790b3a7d345aea904116ad99157f36f6316c3606478a6c74ca150ab63c61ad",
+      "export_sha256": "3f790b3a7d345aea904116ad99157f36f6316c3606478a6c74ca150ab63c61ad",
+      "byte_identical": true,
+      "size_bytes": 26445
+    },
+    {
+      "path": "research/istanbul-2026/raw/stations-forecast-2026-10-14T00-00.json",
+      "source_sha256": "bbd10a37055fc2b8f0bf13450f8e8d1ad877d1230e6ddb30d145c10a77f02752",
+      "export_sha256": "bbd10a37055fc2b8f0bf13450f8e8d1ad877d1230e6ddb30d145c10a77f02752",
+      "byte_identical": true,
+      "size_bytes": 26450
+    },
+    {
+      "path": "research/istanbul-2026/render-page.mjs",
+      "source_sha256": "c5b05582765c9aa26f929c3aef817b49573b8c6771fe3651f2ced31d84c36004",
+      "export_sha256": "c5b05582765c9aa26f929c3aef817b49573b8c6771fe3651f2ced31d84c36004",
+      "byte_identical": true,
+      "size_bytes": 10923
+    },
+    {
+      "path": "research/istanbul-2026/results/istanbul-2026.html",
+      "source_sha256": "46046662fc49f5b88d5386c217d2eb7420de3bbdf3420c7f3c995a354ec804be",
+      "export_sha256": "46046662fc49f5b88d5386c217d2eb7420de3bbdf3420c7f3c995a354ec804be",
+      "byte_identical": true,
+      "size_bytes": 540623
+    },
+    {
+      "path": "research/istanbul-2026/results/paired-rainfall.csv",
+      "source_sha256": "eb6d172c1aff22345cafc56518ae83aacb009d0629950711d1356eae480fbced",
+      "export_sha256": "eb6d172c1aff22345cafc56518ae83aacb009d0629950711d1356eae480fbced",
+      "byte_identical": true,
+      "size_bytes": 1596
+    },
+    {
+      "path": "research/istanbul-2026/results/study.json",
+      "source_sha256": "fb0302e7a3fcaf889cde568210b255866b4a5148879fd6bfb0c04dbb10096c5d",
+      "export_sha256": "fb0302e7a3fcaf889cde568210b255866b4a5148879fd6bfb0c04dbb10096c5d",
+      "byte_identical": true,
+      "size_bytes": 858614
+    },
+    {
+      "path": "research/istanbul-2026/run-study.mjs",
+      "source_sha256": "812a79a5515d6ba8e517c0c2cb4cc317fdb613b8ebfc7ce4a8b53613c8c22eba",
+      "export_sha256": "812a79a5515d6ba8e517c0c2cb4cc317fdb613b8ebfc7ce4a8b53613c8c22eba",
+      "byte_identical": true,
+      "size_bytes": 7894
+    },
+    {
+      "path": "research/istanbul-2026/verify-hosted.mjs",
+      "source_sha256": "079f5fc9f607b0601aec55e594420a23e98e9e9c6e9ad0844888492dd89e12ac",
+      "export_sha256": "079f5fc9f607b0601aec55e594420a23e98e9e9c6e9ad0844888492dd89e12ac",
+      "byte_identical": true,
+      "size_bytes": 731
+    },
+    {
+      "path": "research/istanbul-basins/.gitignore",
+      "source_sha256": "cb8c2a317a4247b5c9d36f14b8916fdafe121ab86d61d6f68ad9bd06050e37b9",
+      "export_sha256": "cb8c2a317a4247b5c9d36f14b8916fdafe121ab86d61d6f68ad9bd06050e37b9",
+      "byte_identical": true,
+      "size_bytes": 72
+    },
+    {
+      "path": "research/istanbul-basins/README.md",
+      "source_sha256": "357b7918f2248fa77b41c1154bdc52d6cc224057b09032bd9077ea1e7f250056",
+      "export_sha256": "357b7918f2248fa77b41c1154bdc52d6cc224057b09032bd9077ea1e7f250056",
+      "byte_identical": true,
+      "size_bytes": 4448
+    },
+    {
+      "path": "research/istanbul-basins/build-catalog.py",
+      "source_sha256": "ec3f0e32223f651d920d99b3d03ba6abec6cc1206d8d2a0d383977f6798594b0",
+      "export_sha256": "ec3f0e32223f651d920d99b3d03ba6abec6cc1206d8d2a0d383977f6798594b0",
+      "byte_identical": true,
+      "size_bytes": 3237
+    },
+    {
+      "path": "research/istanbul-basins/derive-basins.py",
+      "source_sha256": "52135e9f99b0b52878cf5e615e478a8b74a1df37d2cc41d553f88f30a421f97d",
+      "export_sha256": "52135e9f99b0b52878cf5e615e478a8b74a1df37d2cc41d553f88f30a421f97d",
+      "byte_identical": true,
+      "size_bytes": 4684
+    },
+    {
+      "path": "research/istanbul-basins/derived-validation.json",
+      "source_sha256": "ac22698a8aa277a4082e049ef6a965d452b4bc6c5c4b33f13e9d32d79226c56c",
+      "export_sha256": "ac22698a8aa277a4082e049ef6a965d452b4bc6c5c4b33f13e9d32d79226c56c",
+      "byte_identical": true,
+      "size_bytes": 1022
+    },
+    {
+      "path": "research/istanbul-basins/index-flow.py",
+      "source_sha256": "42341c904cb0a9cc09838cc3be1309cf405f1beac7e7ed5dcb0f6f9905600b01",
+      "export_sha256": "42341c904cb0a9cc09838cc3be1309cf405f1beac7e7ed5dcb0f6f9905600b01",
+      "byte_identical": true,
+      "size_bytes": 1193
+    },
+    {
+      "path": "research/istanbul-basins/istanbul-basins.geojson",
+      "source_sha256": "d28374c50f62c3cafb9e2f87c3519fe365ca3307d56bb75b2e3451943c219bbc",
+      "export_sha256": "d28374c50f62c3cafb9e2f87c3519fe365ca3307d56bb75b2e3451943c219bbc",
+      "byte_identical": true,
+      "size_bytes": 161612
+    },
+    {
+      "path": "research/istanbul-basins/istanbul-derived-basins.geojson",
+      "source_sha256": "d6e47aeb7b8c20cc54340186d1cea91c7fc7e710487a7357c69f6ae760085a00",
+      "export_sha256": "d6e47aeb7b8c20cc54340186d1cea91c7fc7e710487a7357c69f6ae760085a00",
+      "byte_identical": true,
+      "size_bytes": 91378
+    },
+    {
+      "path": "research/istanbul-basins/live-validation.json",
+      "source_sha256": "929ea0c66d091319c72bbf7de7936ff4af09b547473c252e4ed9819d39fb8a8e",
+      "export_sha256": "929ea0c66d091319c72bbf7de7936ff4af09b547473c252e4ed9819d39fb8a8e",
+      "byte_identical": true,
+      "size_bytes": 1105
+    },
+    {
+      "path": "research/istanbul-basins/prepare-flow.py",
+      "source_sha256": "cabbe0e073ab5e6a1b973be03ce2561e2d63d18c63160793c3ff318df7386b53",
+      "export_sha256": "cabbe0e073ab5e6a1b973be03ce2561e2d63d18c63160793c3ff318df7386b53",
+      "byte_identical": true,
+      "size_bytes": 2147
+    },
+    {
+      "path": "research/istanbul-basins/raw/flow-window-metadata.json",
+      "source_sha256": "d01a94643149921ae0332953098fa0bdced1bc65fb938c076f8f4a73fc705010",
+      "export_sha256": "d01a94643149921ae0332953098fa0bdced1bc65fb938c076f8f4a73fc705010",
+      "byte_identical": true,
+      "size_bytes": 623
+    },
+    {
+      "path": "research/istanbul-basins/raw/water-supply-istanbul.geojson",
+      "source_sha256": "7cb166b3b2bbe7021c5859fbf1471eb1ff705e5f60ed2b822448a135f512f80b",
+      "export_sha256": "7cb166b3b2bbe7021c5859fbf1471eb1ff705e5f60ed2b822448a135f512f80b",
+      "byte_identical": true,
+      "size_bytes": 132082
+    },
+    {
+      "path": "research/istanbul-basins/requirements.txt",
+      "source_sha256": "f6b9105587797ab480bbe177944da9d95914ccc043dd7a91f4b3fc6f8078dbd3",
+      "export_sha256": "f6b9105587797ab480bbe177944da9d95914ccc043dd7a91f4b3fc6f8078dbd3",
+      "byte_identical": true,
+      "size_bytes": 58
+    },
+    {
+      "path": "research/istanbul-basins/source-validation.json",
+      "source_sha256": "c0a5f842b85bc5cad9b3227c4535c936554cb02bc337e14a708e6208a32bd8a3",
+      "export_sha256": "c0a5f842b85bc5cad9b3227c4535c936554cb02bc337e14a708e6208a32bd8a3",
+      "byte_identical": true,
+      "size_bytes": 2232
+    },
+    {
+      "path": "research/izmir-2024/README.md",
+      "source_sha256": "4115f657665c876a737f94e4c44e86ef109c0b49ae49712db7b8b0d0445409e7",
+      "export_sha256": "4115f657665c876a737f94e4c44e86ef109c0b49ae49712db7b8b0d0445409e7",
+      "byte_identical": true,
+      "size_bytes": 6120
+    },
+    {
+      "path": "research/izmir-2024/extract-observations.py",
+      "source_sha256": "68ab9a0a3445f65b94205904ee776ac309f2ae12109b53658e8dc650de48baab",
+      "export_sha256": "68ab9a0a3445f65b94205904ee776ac309f2ae12109b53658e8dc650de48baab",
+      "byte_identical": true,
+      "size_bytes": 1882
+    },
+    {
+      "path": "research/izmir-2024/fetch-inputs.mjs",
+      "source_sha256": "42bab0a585053dca80b66b2c3ba4aa2e5a5337f0113886c548cf1319ace9fbf4",
+      "export_sha256": "42bab0a585053dca80b66b2c3ba4aa2e5a5337f0113886c548cf1319ace9fbf4",
+      "byte_identical": true,
+      "size_bytes": 2980
+    },
+    {
+      "path": "research/izmir-2024/history-template.html",
+      "source_sha256": "1c501b08580252e762d04b59c201eecb0f700ddc55d2c5a39e89246dd31c63fa",
+      "export_sha256": "1c501b08580252e762d04b59c201eecb0f700ddc55d2c5a39e89246dd31c63fa",
+      "byte_identical": true,
+      "size_bytes": 11886
+    },
+    {
+      "path": "research/izmir-2024/make-report.py",
+      "source_sha256": "28db061c6c45714539c00d774c6f3548a7356f776cd191f19b70845b6ba7e76d",
+      "export_sha256": "28db061c6c45714539c00d774c6f3548a7356f776cd191f19b70845b6ba7e76d",
+      "byte_identical": true,
+      "size_bytes": 14411
+    },
+    {
+      "path": "research/izmir-2024/manifest.json",
+      "source_sha256": "e24c275b7aff3c9f214044e5afe6ff5d6d6ef4182820cdaeea97a4b2451c04ff",
+      "export_sha256": "e24c275b7aff3c9f214044e5afe6ff5d6d6ef4182820cdaeea97a4b2451c04ff",
+      "byte_identical": true,
+      "size_bytes": 20284
+    },
+    {
+      "path": "research/izmir-2024/methods.mjs",
+      "source_sha256": "de6b23174f58af3ba82831c4c5e646832286ed271bf21f216da79aafdbe26ef8",
+      "export_sha256": "de6b23174f58af3ba82831c4c5e646832286ed271bf21f216da79aafdbe26ef8",
+      "byte_identical": true,
+      "size_bytes": 2556
+    },
+    {
+      "path": "research/izmir-2024/observation-manifest.json",
+      "source_sha256": "0bf20f8e144bccf946834f38f0a79d5ad546f6eb92d6ec2ecc6463f3d1481eeb",
+      "export_sha256": "0bf20f8e144bccf946834f38f0a79d5ad546f6eb92d6ec2ecc6463f3d1481eeb",
+      "byte_identical": true,
+      "size_bytes": 448
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-03-14T00-00.json",
+      "source_sha256": "e05df9faa2cff3d424bcbfd9d9444e4e80f6d49dcfc6cd15f95ed90231635b1c",
+      "export_sha256": "e05df9faa2cff3d424bcbfd9d9444e4e80f6d49dcfc6cd15f95ed90231635b1c",
+      "byte_identical": true,
+      "size_bytes": 3332
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-03-20T00-00.json",
+      "source_sha256": "3b3350f14abb5cf89d8c619135897067b5af4c3bb9d2885c83d9c9c48fe1e11b",
+      "export_sha256": "3b3350f14abb5cf89d8c619135897067b5af4c3bb9d2885c83d9c9c48fe1e11b",
+      "byte_identical": true,
+      "size_bytes": 3323
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-03-25T00-00.json",
+      "source_sha256": "dacc1d3516b19744f4a19644da39a1d25868b727ed3647c780765c5399b5014b",
+      "export_sha256": "dacc1d3516b19744f4a19644da39a1d25868b727ed3647c780765c5399b5014b",
+      "byte_identical": true,
+      "size_bytes": 3352
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-03-26T00-00.json",
+      "source_sha256": "3fd5c8e00623f391188f44123ec5be3a31844e71b41ef7281fd229624d9de074",
+      "export_sha256": "3fd5c8e00623f391188f44123ec5be3a31844e71b41ef7281fd229624d9de074",
+      "byte_identical": true,
+      "size_bytes": 3322
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-04-07T00-00.json",
+      "source_sha256": "9d36e372bc33bf7958d87cb92843bbec45d8d081282753b38f0c92bf9b11c354",
+      "export_sha256": "9d36e372bc33bf7958d87cb92843bbec45d8d081282753b38f0c92bf9b11c354",
+      "byte_identical": true,
+      "size_bytes": 3323
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-04-17T00-00.json",
+      "source_sha256": "22c5441d46d577615db24fbba7dd174ee8bc582af695088e13695cd7a834ec9c",
+      "export_sha256": "22c5441d46d577615db24fbba7dd174ee8bc582af695088e13695cd7a834ec9c",
+      "byte_identical": true,
+      "size_bytes": 3428
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-04-18T00-00.json",
+      "source_sha256": "202fc2977d97efff4478cc87b2771d5ccfd3bb4c4e6cd565756cf52156114c43",
+      "export_sha256": "202fc2977d97efff4478cc87b2771d5ccfd3bb4c4e6cd565756cf52156114c43",
+      "byte_identical": true,
+      "size_bytes": 3434
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-04-19T00-00.json",
+      "source_sha256": "fc9b21a1bb1c1d5aa3b5e3988c84df29c34470505972d6bba4f955e8bf625cb2",
+      "export_sha256": "fc9b21a1bb1c1d5aa3b5e3988c84df29c34470505972d6bba4f955e8bf625cb2",
+      "byte_identical": true,
+      "size_bytes": 3406
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-04-20T00-00.json",
+      "source_sha256": "16777304e03ca83460141aed32ea7ed0d2c08e336485fbc1eba48df70f39ea05",
+      "export_sha256": "16777304e03ca83460141aed32ea7ed0d2c08e336485fbc1eba48df70f39ea05",
+      "byte_identical": true,
+      "size_bytes": 3366
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-03T00-00.json",
+      "source_sha256": "309950363edca22d87d55245a8a2024f628024979216906ce4814ee4d7c7b55c",
+      "export_sha256": "309950363edca22d87d55245a8a2024f628024979216906ce4814ee4d7c7b55c",
+      "byte_identical": true,
+      "size_bytes": 3338
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-04T00-00.json",
+      "source_sha256": "a843f87e91012c77417dca88d25296be7b009b0cea8b6958ca5c48b238d1b9ae",
+      "export_sha256": "a843f87e91012c77417dca88d25296be7b009b0cea8b6958ca5c48b238d1b9ae",
+      "byte_identical": true,
+      "size_bytes": 3332
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-16T00-00.json",
+      "source_sha256": "c134d410b8a269689a0195e89c61d5ef4c91da3fd5723cced5565f47d1941967",
+      "export_sha256": "c134d410b8a269689a0195e89c61d5ef4c91da3fd5723cced5565f47d1941967",
+      "byte_identical": true,
+      "size_bytes": 3329
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-22T00-00.json",
+      "source_sha256": "521bcbb4213cc5c84593eeeafce4f3c7e7b2cbc03c600b3269bd0e958092edb0",
+      "export_sha256": "521bcbb4213cc5c84593eeeafce4f3c7e7b2cbc03c600b3269bd0e958092edb0",
+      "byte_identical": true,
+      "size_bytes": 3331
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-23T00-00.json",
+      "source_sha256": "de72aebc72937500bffa6804a2b2593a3528dbd1a866b1d2feb5b5cf8f7b4c45",
+      "export_sha256": "de72aebc72937500bffa6804a2b2593a3528dbd1a866b1d2feb5b5cf8f7b4c45",
+      "byte_identical": true,
+      "size_bytes": 3356
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-05-26T00-00.json",
+      "source_sha256": "d74bd937805f01be28488db564c3f290769273e77d83647213a0f5d9f0bdeaa2",
+      "export_sha256": "d74bd937805f01be28488db564c3f290769273e77d83647213a0f5d9f0bdeaa2",
+      "byte_identical": true,
+      "size_bytes": 3352
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-06-06T00-00.json",
+      "source_sha256": "ac1746686d34163f3707d91e86fba44ac7f934f25be538c00cdb6c5c27aaf8f1",
+      "export_sha256": "ac1746686d34163f3707d91e86fba44ac7f934f25be538c00cdb6c5c27aaf8f1",
+      "byte_identical": true,
+      "size_bytes": 3322
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-06-07T00-00.json",
+      "source_sha256": "2bb502284274847065eda10b0dbe4925b7246798cee00edfe73d9eebc7051ce1",
+      "export_sha256": "2bb502284274847065eda10b0dbe4925b7246798cee00edfe73d9eebc7051ce1",
+      "byte_identical": true,
+      "size_bytes": 3327
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-07-12T00-00.json",
+      "source_sha256": "be670a588a568778622a6b2e38202cd719fdb15119895aa083240ced5ff20c41",
+      "export_sha256": "be670a588a568778622a6b2e38202cd719fdb15119895aa083240ced5ff20c41",
+      "byte_identical": true,
+      "size_bytes": 3327
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-08-26T00-00.json",
+      "source_sha256": "f317d65f81a79a8b4cb67c680ff26160cf65698899e10e166c20ecb5fece8cba",
+      "export_sha256": "f317d65f81a79a8b4cb67c680ff26160cf65698899e10e166c20ecb5fece8cba",
+      "byte_identical": true,
+      "size_bytes": 3347
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-09-10T00-00.json",
+      "source_sha256": "c8332e855510a8de981913185235984019c07684ac4c1fd41921be1cee328f08",
+      "export_sha256": "c8332e855510a8de981913185235984019c07684ac4c1fd41921be1cee328f08",
+      "byte_identical": true,
+      "size_bytes": 3396
+    },
+    {
+      "path": "research/izmir-2024/raw/airport-2024-09-11T00-00.json",
+      "source_sha256": "1d0443d4103290ab7ca869a27f66d893e7ed0db922e8573a17408a57bda14129",
+      "export_sha256": "1d0443d4103290ab7ca869a27f66d893e7ed0db922e8573a17408a57bda14129",
+      "byte_identical": true,
+      "size_bytes": 3438
+    },
+    {
+      "path": "research/izmir-2024/raw/corine-maydanoz.json",
+      "source_sha256": "a038c35fa5a8b07655d0b5dae9a5c712cfa2daf9217ad0f07edc7963f4711415",
+      "export_sha256": "a038c35fa5a8b07655d0b5dae9a5c712cfa2daf9217ad0f07edc7963f4711415",
+      "byte_identical": true,
+      "size_bytes": 4117793
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-08T00-00.json",
+      "source_sha256": "b730094eb5715714976657ba3cca25e1f460abc8867c25421f9f48a06ae94c28",
+      "export_sha256": "b730094eb5715714976657ba3cca25e1f460abc8867c25421f9f48a06ae94c28",
+      "byte_identical": true,
+      "size_bytes": 6805
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-08T12-00.json",
+      "source_sha256": "fd85976b5353b408f49498931a8d4905baec864a992b6bb7285b400cef69f066",
+      "export_sha256": "fd85976b5353b408f49498931a8d4905baec864a992b6bb7285b400cef69f066",
+      "byte_identical": true,
+      "size_bytes": 6789
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-09T00-00.json",
+      "source_sha256": "743ecac88a1403fe103a225945b6e75dc878355348d37b37a1538144ce9a5fed",
+      "export_sha256": "743ecac88a1403fe103a225945b6e75dc878355348d37b37a1538144ce9a5fed",
+      "byte_identical": true,
+      "size_bytes": 6775
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-09T06-00.json",
+      "source_sha256": "80ee570fc9e411bede8806418270de8a31388c03f84ca3d92ac4b0e6849db813",
+      "export_sha256": "80ee570fc9e411bede8806418270de8a31388c03f84ca3d92ac4b0e6849db813",
+      "byte_identical": true,
+      "size_bytes": 6787
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-09T12-00.json",
+      "source_sha256": "63dd6323cb64fdff841faffdf1e04d167342a36b1dc332e1d03a2c930895116d",
+      "export_sha256": "63dd6323cb64fdff841faffdf1e04d167342a36b1dc332e1d03a2c930895116d",
+      "byte_identical": true,
+      "size_bytes": 6845
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-09T18-00.json",
+      "source_sha256": "e836dc28d8c4840553ee38da230d29f931b37aac56078e35d3e95da52950ecf6",
+      "export_sha256": "e836dc28d8c4840553ee38da230d29f931b37aac56078e35d3e95da52950ecf6",
+      "byte_identical": true,
+      "size_bytes": 6829
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-10T00-00.json",
+      "source_sha256": "29f5a754b2bb984929d4afb36b4ee00b2435a04af3e90e030ab29c45dea1f858",
+      "export_sha256": "29f5a754b2bb984929d4afb36b4ee00b2435a04af3e90e030ab29c45dea1f858",
+      "byte_identical": true,
+      "size_bytes": 6822
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-10T06-00.json",
+      "source_sha256": "c50d653f9e5d490d90863f1528f8edc566a09d6d8a4fd59d17ca2c68e80840f0",
+      "export_sha256": "c50d653f9e5d490d90863f1528f8edc566a09d6d8a4fd59d17ca2c68e80840f0",
+      "byte_identical": true,
+      "size_bytes": 6960
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-10T12-00.json",
+      "source_sha256": "fa2295490313a521675a90a4dcbb8ffb8c37b03ac688df13f3bbbbee1a5bd020",
+      "export_sha256": "fa2295490313a521675a90a4dcbb8ffb8c37b03ac688df13f3bbbbee1a5bd020",
+      "byte_identical": true,
+      "size_bytes": 6924
+    },
+    {
+      "path": "research/izmir-2024/raw/event-2024-09-10T18-00.json",
+      "source_sha256": "7b3de716eb9a9ecf1047aea01f9753b5da82a92c1d448b58be468810cedf756b",
+      "export_sha256": "7b3de716eb9a9ecf1047aea01f9753b5da82a92c1d448b58be468810cedf756b",
+      "byte_identical": true,
+      "size_bytes": 6903
+    },
+    {
+      "path": "research/izmir-2024/raw/gauges.json",
+      "source_sha256": "0a94063cdb7f80e13f1dadb1d6552828378df0bfb369abdcb39c85527222c3ed",
+      "export_sha256": "0a94063cdb7f80e13f1dadb1d6552828378df0bfb369abdcb39c85527222c3ed",
+      "byte_identical": true,
+      "size_bytes": 5902
+    },
+    {
+      "path": "research/izmir-2024/raw/gsod-2024.csv",
+      "source_sha256": "6c1ba44ba73a83575ab07e97227918b3b05a0e8b98c056bab9ea0eb793745725",
+      "export_sha256": "6c1ba44ba73a83575ab07e97227918b3b05a0e8b98c056bab9ea0eb793745725",
+      "byte_identical": true,
+      "size_bytes": 83024
+    },
+    {
+      "path": "research/izmir-2024/raw/gsod-documentation.txt",
+      "source_sha256": "25a784a4cba0eab5f070137c57c4b4bd113982e054c77812b2d22e96c5818bc1",
+      "export_sha256": "25a784a4cba0eab5f070137c57c4b4bd113982e054c77812b2d22e96c5818bc1",
+      "byte_identical": true,
+      "size_bytes": 11288
+    },
+    {
+      "path": "research/izmir-2024/raw/isd-precipitation-2024.json",
+      "source_sha256": "96cae67518f160af7fadd748b4a34767d4bc039dca3404341b5c0a417c04589a",
+      "export_sha256": "96cae67518f160af7fadd748b4a34767d4bc039dca3404341b5c0a417c04589a",
+      "byte_identical": true,
+      "size_bytes": 176509
+    },
+    {
+      "path": "research/izmir-2024/raw/observations.json",
+      "source_sha256": "606ac2069db2258499f36ad07407b5cef00e2013cfbe5dfaaa09ebaff490a8c3",
+      "export_sha256": "606ac2069db2258499f36ad07407b5cef00e2013cfbe5dfaaa09ebaff490a8c3",
+      "byte_identical": true,
+      "size_bytes": 13563
+    },
+    {
+      "path": "research/izmir-2024/raw/osm.json",
+      "source_sha256": "448cb3b5ad6b54d741386479718aeb75ee525303b2c6ab9fd7d65d86527ad9c8",
+      "export_sha256": "448cb3b5ad6b54d741386479718aeb75ee525303b2c6ab9fd7d65d86527ad9c8",
+      "byte_identical": true,
+      "size_bytes": 512
+    },
+    {
+      "path": "research/izmir-2024/results/calibration-pairs.csv",
+      "source_sha256": "a6f688274e47914919b67a8c545e255a54f7b5edcda2d1105ec336dbce41da46",
+      "export_sha256": "a6f688274e47914919b67a8c545e255a54f7b5edcda2d1105ec336dbce41da46",
+      "byte_identical": true,
+      "size_bytes": 2750
+    },
+    {
+      "path": "research/izmir-2024/results/hindcast-rain.png",
+      "source_sha256": "0eef3467704d1e110d1cee80d28a528e193c30b227a21727352d0d5e00556c2c",
+      "export_sha256": "0eef3467704d1e110d1cee80d28a528e193c30b227a21727352d0d5e00556c2c",
+      "byte_identical": true,
+      "size_bytes": 40131
+    },
+    {
+      "path": "research/izmir-2024/results/hindcast-runs.csv",
+      "source_sha256": "69edb302b8bdac7fab19a0417542cba07203aea317f69ed6e52e9294aa70ec1d",
+      "export_sha256": "69edb302b8bdac7fab19a0417542cba07203aea317f69ed6e52e9294aa70ec1d",
+      "byte_identical": true,
+      "size_bytes": 2410
+    },
+    {
+      "path": "research/izmir-2024/results/hydrology-sensitivity.png",
+      "source_sha256": "505044a9f1f54e289b1c4e6dda6d0c51562c2a819f92a1f437c916b785d07d7c",
+      "export_sha256": "505044a9f1f54e289b1c4e6dda6d0c51562c2a819f92a1f437c916b785d07d7c",
+      "byte_identical": true,
+      "size_bytes": 84832
+    },
+    {
+      "path": "research/izmir-2024/results/hydrorisk-izmir-2024-rapor.pdf",
+      "source_sha256": "60129555f9b7d77275f6457865c194d0d179062614d0a48b079e0a5e451b254e",
+      "export_sha256": "60129555f9b7d77275f6457865c194d0d179062614d0a48b079e0a5e451b254e",
+      "byte_identical": true,
+      "size_bytes": 190601
+    },
+    {
+      "path": "research/izmir-2024/results/sensitivity.csv",
+      "source_sha256": "882eb6b540cd060711c01589a8206460f269ac493aefacae395775e77e850b2d",
+      "export_sha256": "882eb6b540cd060711c01589a8206460f269ac493aefacae395775e77e850b2d",
+      "byte_identical": true,
+      "size_bytes": 4410
+    },
+    {
+      "path": "research/izmir-2024/results/study.json",
+      "source_sha256": "5caa98fa01f8ff4ebc446bc3aee871600514029c701d8377bda1ca9564aa5223",
+      "export_sha256": "5caa98fa01f8ff4ebc446bc3aee871600514029c701d8377bda1ca9564aa5223",
+      "byte_identical": true,
+      "size_bytes": 1281608
+    },
+    {
+      "path": "research/izmir-2024/run-study.mjs",
+      "source_sha256": "0b7fcccdc54c3e3bdbd13e7f44d3a1d796b3e5bbd964c012e02b8e2d827db19d",
+      "export_sha256": "0b7fcccdc54c3e3bdbd13e7f44d3a1d796b3e5bbd964c012e02b8e2d827db19d",
+      "byte_identical": true,
+      "size_bytes": 13513
+    },
+    {
+      "path": "research/izmir-2024/verify-dom.mjs",
+      "source_sha256": "f56d95ec05eb71c85165c3f81888b4e7b37b707fc21007bd74cd95f65eb42d13",
+      "export_sha256": "f56d95ec05eb71c85165c3f81888b4e7b37b707fc21007bd74cd95f65eb42d13",
+      "byte_identical": true,
+      "size_bytes": 3993
+    },
+    {
+      "path": "scripts/build-hosted.mjs",
+      "source_sha256": "328fb4065d483e0f7105a34bdf8e1ff4d65b7fcaea2b3b48a6a59e679736d8f1",
+      "export_sha256": "328fb4065d483e0f7105a34bdf8e1ff4d65b7fcaea2b3b48a6a59e679736d8f1",
+      "byte_identical": true,
+      "size_bytes": 4632
+    },
+    {
+      "path": "scripts/verify-map.mjs",
+      "source_sha256": "666578aa3a6f78b6c638ec14dc7422bd1c8c4e490641d1436a6bd380441f5b97",
+      "export_sha256": "666578aa3a6f78b6c638ec14dc7422bd1c8c4e490641d1436a6bd380441f5b97",
+      "byte_identical": true,
+      "size_bytes": 9708
+    },
+    {
+      "path": "tests/analysis.test.mjs",
+      "source_sha256": "b22c9147504b48a82f9a74af1b9486c49cf4528f99ec73e340986ae3741dd323",
+      "export_sha256": "b22c9147504b48a82f9a74af1b9486c49cf4528f99ec73e340986ae3741dd323",
+      "byte_identical": true,
+      "size_bytes": 5918
+    },
+    {
+      "path": "tests/area.test.mjs",
+      "source_sha256": "fc1b2186575e730b2b9aa83c3aafcb054dce9a206d50357c4498956978d55b46",
+      "export_sha256": "fc1b2186575e730b2b9aa83c3aafcb054dce9a206d50357c4498956978d55b46",
+      "byte_identical": true,
+      "size_bytes": 879
+    },
+    {
+      "path": "tests/corine.test.mjs",
+      "source_sha256": "ef101170a27631a31f0cccbe2ce43e0fc69a9f3da57c0eedc8fce86a092a6802",
+      "export_sha256": "ef101170a27631a31f0cccbe2ce43e0fc69a9f3da57c0eedc8fce86a092a6802",
+      "byte_identical": true,
+      "size_bytes": 1390
+    },
+    {
+      "path": "tests/dem.test.mjs",
+      "source_sha256": "700269f98f0b4ffafbfb0e5833a2d9b847b04885f5f72d9c4de523655b0954c6",
+      "export_sha256": "700269f98f0b4ffafbfb0e5833a2d9b847b04885f5f72d9c4de523655b0954c6",
+      "byte_identical": true,
+      "size_bytes": 1581
+    },
+    {
+      "path": "tests/history.test.mjs",
+      "source_sha256": "f6b3d1fcb7fa1f2e1b3208f3b058715ddea19f0814f8098bfb0cc9d7c26e787c",
+      "export_sha256": "f6b3d1fcb7fa1f2e1b3208f3b058715ddea19f0814f8098bfb0cc9d7c26e787c",
+      "byte_identical": true,
+      "size_bytes": 3864
+    },
+    {
+      "path": "tests/hosted.test.mjs",
+      "source_sha256": "219c7f64ba6bd5f14418c0e8e479d54938c73dca073be739c2149e35808c92b9",
+      "export_sha256": "219c7f64ba6bd5f14418c0e8e479d54938c73dca073be739c2149e35808c92b9",
+      "byte_identical": true,
+      "size_bytes": 3473
+    },
+    {
+      "path": "tests/hydrology.test.mjs",
+      "source_sha256": "4b4e157e1ad209a8a8a275ba2ae47006d196cb32be31b66d98af12007373d898",
+      "export_sha256": "4b4e157e1ad209a8a8a275ba2ae47006d196cb32be31b66d98af12007373d898",
+      "byte_identical": true,
+      "size_bytes": 7000
+    },
+    {
+      "path": "tests/istanbul-baseline.test.mjs",
+      "source_sha256": "75a05bc62778581bd3611978442455c90ec0f700db43e3c4fc2c0cd8784b7a40",
+      "export_sha256": "3bc6150729418d8a4efe76f7d7bdcb5d73093ebfd6f186d89484c661114e37b8",
+      "byte_identical": false,
+      "size_bytes": 2788
+    },
+    {
+      "path": "tests/istanbul-basins.test.mjs",
+      "source_sha256": "492e456385ec2aeacd1a8d9f74c3660b7ca3da81d788a0378d16a35bf56ff675",
+      "export_sha256": "492e456385ec2aeacd1a8d9f74c3660b7ca3da81d788a0378d16a35bf56ff675",
+      "byte_identical": true,
+      "size_bytes": 4931
+    },
+    {
+      "path": "tests/istanbul.test.mjs",
+      "source_sha256": "25a16bc2275839ab73e9fb376fad985f469f72759c3895120c01c6c246141e96",
+      "export_sha256": "25a16bc2275839ab73e9fb376fad985f469f72759c3895120c01c6c246141e96",
+      "byte_identical": true,
+      "size_bytes": 3526
+    },
+    {
+      "path": "tests/public-demo.test.mjs",
+      "source_sha256": "de7324ba5f74a1dca40af8897cba107a0e008a83ef0e87d79a8adc8921568b80",
+      "export_sha256": "de7324ba5f74a1dca40af8897cba107a0e008a83ef0e87d79a8adc8921568b80",
+      "byte_identical": true,
+      "size_bytes": 598
+    },
+    {
+      "path": "tests/rivers.test.mjs",
+      "source_sha256": "7ba30bf5c19155fa37bdd467aee356a0d60b7cc4c50258741fb1683e3e14defd",
+      "export_sha256": "7ba30bf5c19155fa37bdd467aee356a0d60b7cc4c50258741fb1683e3e14defd",
+      "byte_identical": true,
+      "size_bytes": 4205
+    },
+    {
+      "path": "worker/analysis.mjs",
+      "source_sha256": "8a5c7c7b237abeced7bf4a414ab67257a04ff5cca3a2074ae481104568ca9604",
+      "export_sha256": "8a5c7c7b237abeced7bf4a414ab67257a04ff5cca3a2074ae481104568ca9604",
+      "byte_identical": true,
+      "size_bytes": 17062
+    },
+    {
+      "path": "worker/basins.mjs",
+      "source_sha256": "5f3b707da923190ad7521139f0a0aac5398e7a04616e394a243be42b95fc2838",
+      "export_sha256": "5f3b707da923190ad7521139f0a0aac5398e7a04616e394a243be42b95fc2838",
+      "byte_identical": true,
+      "size_bytes": 76329
+    },
+    {
+      "path": "worker/ege.mjs",
+      "source_sha256": "6d4908306f16817a03d33ee5a95ad8ba805abd3e1b5e55a5dcb9b1eac5cfe900",
+      "export_sha256": "6d4908306f16817a03d33ee5a95ad8ba805abd3e1b5e55a5dcb9b1eac5cfe900",
+      "byte_identical": true,
+      "size_bytes": 1807589
+    },
+    {
+      "path": "worker/geometry.mjs",
+      "source_sha256": "e1996c83b7b6a00d141bdd15d1b1695e915e395b35ea81674a5d395f68860ac6",
+      "export_sha256": "e1996c83b7b6a00d141bdd15d1b1695e915e395b35ea81674a5d395f68860ac6",
+      "byte_identical": true,
+      "size_bytes": 2261
+    },
+    {
+      "path": "worker/history-data.mjs",
+      "source_sha256": "47c74405e9d8ce65441b43f3703f9d7640b7ecefcd1734da86bf98fb90843c80",
+      "export_sha256": "47c74405e9d8ce65441b43f3703f9d7640b7ecefcd1734da86bf98fb90843c80",
+      "byte_identical": true,
+      "size_bytes": 749294
+    },
+    {
+      "path": "worker/hydrology.mjs",
+      "source_sha256": "61f068f4c7ff7570b3e676439279c226bf5a1ad7a6bd1e990a296b801e025238",
+      "export_sha256": "61f068f4c7ff7570b3e676439279c226bf5a1ad7a6bd1e990a296b801e025238",
+      "byte_identical": true,
+      "size_bytes": 5890
+    },
+    {
+      "path": "worker/index.mjs",
+      "source_sha256": "650c7c4cd03153814de2aa3a6923ff23c34a6c7ee66e6324521970a087e7a0c6",
+      "export_sha256": "650c7c4cd03153814de2aa3a6923ff23c34a6c7ee66e6324521970a087e7a0c6",
+      "byte_identical": true,
+      "size_bytes": 13866
+    },
+    {
+      "path": "worker/istanbul-basins.mjs",
+      "source_sha256": "eac2c6daece4bdf3f7c5fc452d641275e281d6b9e10fd1283ca8cd11edb01890",
+      "export_sha256": "eac2c6daece4bdf3f7c5fc452d641275e281d6b9e10fd1283ca8cd11edb01890",
+      "byte_identical": true,
+      "size_bytes": 161794
+    },
+    {
+      "path": "worker/istanbul.mjs",
+      "source_sha256": "6c2daf4403c864f3f4a8fcb24a38af8f170495362aaab5bb3bfdd8a21923a100",
+      "export_sha256": "6c2daf4403c864f3f4a8fcb24a38af8f170495362aaab5bb3bfdd8a21923a100",
+      "byte_identical": true,
+      "size_bytes": 1483052
+    },
+    {
+      "path": "worker/monitoring.mjs",
+      "source_sha256": "7c27d7960a50fab0905c260d9b23362c2d2161a420104cf85cfe888e2e9b5e41",
+      "export_sha256": "7c27d7960a50fab0905c260d9b23362c2d2161a420104cf85cfe888e2e9b5e41",
+      "byte_identical": true,
+      "size_bytes": 10387
+    },
+    {
+      "path": "worker/regions.mjs",
+      "source_sha256": "642df9f3accb5837988f6fe67bac474d0bad0d9ee8e37a6ec443dff6a22c1f20",
+      "export_sha256": "642df9f3accb5837988f6fe67bac474d0bad0d9ee8e37a6ec443dff6a22c1f20",
+      "byte_identical": true,
+      "size_bytes": 1558
+    }
+  ]
+}

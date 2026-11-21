@@ -1,0 +1,18 @@
+{
+  "station": "17219099999",
+  "retrievedDate": "2026-10-08",
+  "sources": [
+    {
+      "file": "adnan-menderes-2024.csv",
+      "sha256": "6c9f374cc6ed4ebd91ee66b0bf7845acab7dce0f14bbd20ba9efe880ce3cc668",
+      "bytes": 7323085
+    },
+    {
+      "file": "gsod-2024.csv",
+      "sha256": "6c1ba44ba73a83575ab07e97227918b3b05a0e8b98c056bab9ea0eb793745725",
+      "bytes": 83024
+    }
+  ],
+  "acceptedDays": 75,
+  "conditionalGSODPairing": true
+}

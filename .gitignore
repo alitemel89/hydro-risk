@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.angular/
+.nx/
+.env
+research/izmir-2024/raw/adnan-menderes-2024.csv
+research/izmir-2024/raw/isd-history.csv
+research/izmir-2024/raw/noaa-event.json
+research/izmir-2024/raw/gsod-readme.txt
+research/izmir-2024/raw/run-test.json

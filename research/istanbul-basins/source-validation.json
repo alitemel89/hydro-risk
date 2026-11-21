@@ -1,0 +1,100 @@
+[
+  {
+    "id": "istanbul-sazlidere",
+    "valid": true,
+    "referenceAreaKm2": 169.08948144864863,
+    "repairReason": null,
+    "sourceAreaKm2": 169.08890858476227,
+    "areaChangeFraction": 3.387944786936714e-06,
+    "bounds": [
+      28.58591,
+      41.105868,
+      28.78765,
+      41.284949
+    ]
+  },
+  {
+    "id": "istanbul-buyukcekmece",
+    "valid": true,
+    "referenceAreaKm2": 621.7181511317029,
+    "repairReason": "Ring Self-intersection[28.388697 41.128625]",
+    "sourceAreaKm2": 621.7215770424158,
+    "areaChangeFraction": -5.510361614224912e-06,
+    "bounds": [
+      28.253312,
+      41.016638,
+      28.638082,
+      41.297631
+    ]
+  },
+  {
+    "id": "istanbul-alibey-baraji",
+    "valid": true,
+    "referenceAreaKm2": 157.97786440281462,
+    "repairReason": "Ring Self-intersection[28.807859 41.13837]",
+    "sourceAreaKm2": 157.9785636867302,
+    "areaChangeFraction": -4.426448115935067e-06,
+    "bounds": [
+      28.68642,
+      41.099706,
+      28.94374,
+      41.280787
+    ]
+  },
+  {
+    "id": "istanbul-elmali",
+    "valid": true,
+    "referenceAreaKm2": 81.88297357250678,
+    "repairReason": null,
+    "sourceAreaKm2": 81.88166566831973,
+    "areaChangeFraction": 1.5973101870736528e-05,
+    "bounds": [
+      29.093796,
+      40.967838,
+      29.211606,
+      41.122643
+    ]
+  },
+  {
+    "id": "istanbul-omerli",
+    "valid": true,
+    "referenceAreaKm2": 607.8183208563414,
+    "repairReason": null,
+    "sourceAreaKm2": 607.8213962598683,
+    "areaChangeFraction": -5.059715807553822e-06,
+    "bounds": [
+      29.164892,
+      40.85483,
+      29.649995,
+      41.103537
+    ]
+  },
+  {
+    "id": "istanbul-darlik",
+    "valid": true,
+    "referenceAreaKm2": 207.04842642216244,
+    "repairReason": null,
+    "sourceAreaKm2": 207.0526152350186,
+    "areaChangeFraction": -2.0230668670406793e-05,
+    "bounds": [
+      29.513981,
+      40.863765,
+      29.704293,
+      41.115753
+    ]
+  },
+  {
+    "id": "istanbul-terkos",
+    "valid": true,
+    "referenceAreaKm2": 724.6749993725765,
+    "repairReason": null,
+    "sourceAreaKm2": 724.6742621282181,
+    "areaChangeFraction": 1.017345857334817e-06,
+    "bounds": [
+      28.102756,
+      41.227999,
+      28.728627,
+      41.465023
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "retrievedAt": "2026-10-20T13:20:38.563Z",
+  "timeWindow": "Önceki gün 06:00 UTC – tarih 06:00 UTC; MGM sayfa sözleşmesi",
+  "qualityControlled": false,
+  "sources": [
+    {
+      "url": "https://servis.mgm.gov.tr/web/sondurumlar/toplamyagis?tarih=2026-10-14",
+      "file": "raw/mgm-2026-10-14.json",
+      "sha256": "53c89e3c3442eaa83c51249682784e753689006d1f19cba65de5e95a26413914",
+      "representation": "İstanbul kayıtlarının kayıpsız alan projeksiyonu; Türkiye geneli dışarıda."
+    },
+    {
+      "url": "https://servis.mgm.gov.tr/web/sondurumlar/toplamyagis?tarih=2026-10-15",
+      "file": "raw/mgm-2026-10-15.json",
+      "sha256": "f51b7f7eecdaff5b0c078431f294c271c3f52d1018961199d269b5c8823bcac8",
+      "representation": "İstanbul kayıtlarının kayıpsız alan projeksiyonu; Türkiye geneli dışarıda."
+    }
+  ]
+}

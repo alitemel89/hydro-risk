@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-20",
+  "runtime": "v24.22.3",
+  "source_version": 19,
+  "source_commit": "3c7888f430d5f4e6ff7f7bbc017f6d92606d3f58",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --no-audit --no-fund",
+      "status": "passed",
+      "installed_packages": 614
+    },
+    {
+      "command": "npm exec tsc -- -p apps/api/tsconfig.json",
+      "status": "passed"
+    },
+    {
+      "command": "npm run build:hosted",
+      "status": "passed",
+      "scope": "Angular frontend and production Worker bundle"
+    },
+    {
+      "command": "npm test",
+      "status": "passed",
+      "tests": 50,
+      "passed": 50,
+      "failed": 0
+    },
+    {
+      "command": "npm run test:ui",
+      "status": "passed",
+      "scope": "Compiled Angular/Leaflet DOM interactions: polygon draw, undo, analysis, layers and saved areas"
+    },
+    {
+      "command": "node research/istanbul-2026/verify-hosted.mjs",
+      "status": "passed",
+      "scope": "HTML / JSON / CSV routes"
+    }
+  ],
+  "limitations": [
+    {
+      "command": "npm run build",
+      "status": "not_verified_via_nx",
+      "detail": "Nx project graph/plugin process stalled in this execution environment. A daemon-disabled retry failed with no cached graph; direct backend TypeScript and frontend Angular builds passed."
+    },
+    "UI verification used jsdom; no visual browser inspection was performed.",
+    "Live ECMWF/CORINE service availability and production database credentials were not exercised; API tests use controlled fixtures."
+  ],
+  "secret_scan": {
+    "files_scanned": 151,
+    "findings": [],
+    "method": "Known secret formats, private keys, credential URLs and literal password patterns; excludes installed dependencies/build caches."
+  }
+}

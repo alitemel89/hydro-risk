@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "projects": {
+    "web": {
+      "projectType": "application",
+      "root": "apps/web",
+      "sourceRoot": "apps/web/src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "apps/web/src/main.ts",
+            "index": "apps/web/src/index.html",
+            "tsConfig": "apps/web/tsconfig.json",
+            "outputPath": "dist/web",
+            "styles": [
+              "node_modules/leaflet/dist/leaflet.css",
+              "apps/web/src/styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": {
+            "buildTarget": "web:build",
+            "proxyConfig": "apps/web/proxy.json"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
+}

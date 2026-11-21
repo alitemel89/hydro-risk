@@ -1,0 +1,7 @@
+import {EGE_BOUNDARIES} from './ege.mjs';
+import {ISTANBUL_BOUNDARIES} from './istanbul.mjs';
+export const ANALYSIS_REGIONS=[{id:'istanbul',name:'İstanbul',boundarySource:'Türkiye Harita Verisi · İstanbul il kara sınırı (MIT); idari sınır, drenaj havzası değildir',sourceUrl:'https://github.com/ttezer/turkiye-harita-verisi',retrievedAt:'2026-10-15',geometry:ISTANBUL_BOUNDARIES},{id:'ege',name:'Ege',boundarySource:'Türkiye Harita Verisi · 8 Ege ili (MIT)',geometry:EGE_BOUNDARIES}];
+function regionRingContains(p,ring){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])inside=!inside;}return inside;}
+function regionFeatureContains(p,f){const polys=f.geometry.type==='Polygon'?[f.geometry.coordinates]:f.geometry.coordinates;return polys.some(r=>regionRingContains(p,r[0])&&!r.slice(1).some(h=>regionRingContains(p,h)));}
+export function analysisRegionForPoint(p){return ANALYSIS_REGIONS.find(r=>r.geometry.features.some(f=>regionFeatureContains(p,f)))||null;}
+export function checkAnalysisRegion(geometry){let region=null;const ring=geometry.coordinates[0];for(let i=0;i<ring.length-1;i++){const a=ring[i],b=ring[i+1];for(let j=0;j<=10;j++){const found=analysisRegionForPoint([a[0]+(b[0]-a[0])*j/10,a[1]+(b[1]-a[1])*j/10]);if(!found||region&&found.id!==region.id)throw new Error('Alan İstanbul veya Ege kara sınırları içinde olmalı. Deniz / boğazı aşan alanı karaya doğru daralt.');region=found;}}return region;}

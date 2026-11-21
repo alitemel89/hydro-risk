@@ -1,0 +1,61 @@
+[
+  {
+    "id": "istanbul-ayamama",
+    "status": 200,
+    "areaKm2": 68.32560511773907,
+    "hours": 72,
+    "forecastPoints": 9,
+    "coverClasses": [
+      "121",
+      "111",
+      "112",
+      "231",
+      "321",
+      "124",
+      "141",
+      "122"
+    ],
+    "waterBalanceError": 9.903189379656396e-14,
+    "checkedAt": "2026-10-18T08:39:03.660Z"
+  },
+  {
+    "id": "istanbul-kagithane",
+    "status": 200,
+    "areaKm2": 176.4807559105549,
+    "hours": 72,
+    "forecastPoints": 6,
+    "coverClasses": [
+      "311",
+      "313",
+      "133",
+      "242",
+      "122",
+      "141",
+      "121",
+      "312",
+      "112"
+    ],
+    "waterBalanceError": -3.5083047578154947e-14,
+    "checkedAt": "2026-10-18T08:39:03.679Z"
+  },
+  {
+    "id": "istanbul-omerli",
+    "status": 200,
+    "areaKm2": 607.0365729794323,
+    "hours": 72,
+    "forecastPoints": 9,
+    "coverClasses": [
+      "243",
+      "324",
+      "311",
+      "211",
+      "242",
+      "121",
+      "313",
+      "112",
+      "142"
+    ],
+    "waterBalanceError": 3.774758283725532e-14,
+    "checkedAt": "2026-10-18T08:39:03.718Z"
+  }
+]

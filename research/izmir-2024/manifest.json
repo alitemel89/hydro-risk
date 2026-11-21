@@ -1,0 +1,274 @@
+{
+  "stations": [
+    {
+      "id": "maydanoz",
+      "name": "Maydanoz yerleşim noktası",
+      "lat": 37.9885022,
+      "lng": 27.1783304
+    },
+    {
+      "id": "airport",
+      "name": "Adnan Menderes gözlem istasyonu",
+      "lat": 38.292392,
+      "lng": 27.156953
+    }
+  ],
+  "model": "ECMWF IFS Cycle 49R1 hindcast, NOT a verified 2024 operational issue archive",
+  "jobs": [
+    {
+      "file": "airport-2024-03-14T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-03-14T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-03-14T00:00",
+      "kind": "calibration",
+      "sha256": "e05df9faa2cff3d424bcbfd9d9444e4e80f6d49dcfc6cd15f95ed90231635b1c",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-03-20T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-03-20T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-03-20T00:00",
+      "kind": "calibration",
+      "sha256": "3b3350f14abb5cf89d8c619135897067b5af4c3bb9d2885c83d9c9c48fe1e11b",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-03-25T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-03-25T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-03-25T00:00",
+      "kind": "calibration",
+      "sha256": "dacc1d3516b19744f4a19644da39a1d25868b727ed3647c780765c5399b5014b",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-03-26T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-03-26T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-03-26T00:00",
+      "kind": "calibration",
+      "sha256": "3fd5c8e00623f391188f44123ec5be3a31844e71b41ef7281fd229624d9de074",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-04-07T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-04-07T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-04-07T00:00",
+      "kind": "calibration",
+      "sha256": "9d36e372bc33bf7958d87cb92843bbec45d8d081282753b38f0c92bf9b11c354",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-04-17T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-04-17T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-04-17T00:00",
+      "kind": "calibration",
+      "sha256": "22c5441d46d577615db24fbba7dd174ee8bc582af695088e13695cd7a834ec9c",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-04-18T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-04-18T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-04-18T00:00",
+      "kind": "calibration",
+      "sha256": "202fc2977d97efff4478cc87b2771d5ccfd3bb4c4e6cd565756cf52156114c43",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-04-19T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-04-19T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-04-19T00:00",
+      "kind": "calibration",
+      "sha256": "fc9b21a1bb1c1d5aa3b5e3988c84df29c34470505972d6bba4f955e8bf625cb2",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-04-20T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-04-20T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-04-20T00:00",
+      "kind": "calibration",
+      "sha256": "16777304e03ca83460141aed32ea7ed0d2c08e336485fbc1eba48df70f39ea05",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-03T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-03T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-03T00:00",
+      "kind": "calibration",
+      "sha256": "309950363edca22d87d55245a8a2024f628024979216906ce4814ee4d7c7b55c",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-04T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-04T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-04T00:00",
+      "kind": "calibration",
+      "sha256": "a843f87e91012c77417dca88d25296be7b009b0cea8b6958ca5c48b238d1b9ae",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-16T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-16T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-16T00:00",
+      "kind": "calibration",
+      "sha256": "c134d410b8a269689a0195e89c61d5ef4c91da3fd5723cced5565f47d1941967",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-22T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-22T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-22T00:00",
+      "kind": "calibration",
+      "sha256": "521bcbb4213cc5c84593eeeafce4f3c7e7b2cbc03c600b3269bd0e958092edb0",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-23T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-23T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-23T00:00",
+      "kind": "calibration",
+      "sha256": "de72aebc72937500bffa6804a2b2593a3528dbd1a866b1d2feb5b5cf8f7b4c45",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-05-26T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-05-26T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-05-26T00:00",
+      "kind": "calibration",
+      "sha256": "d74bd937805f01be28488db564c3f290769273e77d83647213a0f5d9f0bdeaa2",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-06-06T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-06-06T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-06-06T00:00",
+      "kind": "calibration",
+      "sha256": "ac1746686d34163f3707d91e86fba44ac7f934f25be538c00cdb6c5c27aaf8f1",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-06-07T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-06-07T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-06-07T00:00",
+      "kind": "calibration",
+      "sha256": "2bb502284274847065eda10b0dbe4925b7246798cee00edfe73d9eebc7051ce1",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-07-12T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-07-12T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-07-12T00:00",
+      "kind": "calibration",
+      "sha256": "be670a588a568778622a6b2e38202cd719fdb15119895aa083240ced5ff20c41",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-08-26T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-08-26T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-08-26T00:00",
+      "kind": "calibration",
+      "sha256": "f317d65f81a79a8b4cb67c680ff26160cf65698899e10e166c20ecb5fece8cba",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-09-10T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-10T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-10T00:00",
+      "kind": "calibration",
+      "sha256": "c8332e855510a8de981913185235984019c07684ac4c1fd41921be1cee328f08",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "airport-2024-09-11T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=38.292392&longitude=27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-11T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-11T00:00",
+      "kind": "calibration",
+      "sha256": "1d0443d4103290ab7ca869a27f66d893e7ed0db922e8573a17408a57bda14129",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-08T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-08T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-08T00:00",
+      "kind": "event",
+      "sha256": "b730094eb5715714976657ba3cca25e1f460abc8867c25421f9f48a06ae94c28",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-08T12-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-08T12%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-08T12:00",
+      "kind": "event",
+      "sha256": "fd85976b5353b408f49498931a8d4905baec864a992b6bb7285b400cef69f066",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-09T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-09T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-09T00:00",
+      "kind": "event",
+      "sha256": "743ecac88a1403fe103a225945b6e75dc878355348d37b37a1538144ce9a5fed",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-09T06-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-09T06%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-09T06:00",
+      "kind": "event",
+      "sha256": "80ee570fc9e411bede8806418270de8a31388c03f84ca3d92ac4b0e6849db813",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-09T12-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-09T12%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-09T12:00",
+      "kind": "event",
+      "sha256": "63dd6323cb64fdff841faffdf1e04d167342a36b1dc332e1d03a2c930895116d",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-09T18-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-09T18%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-09T18:00",
+      "kind": "event",
+      "sha256": "e836dc28d8c4840553ee38da230d29f931b37aac56078e35d3e95da52950ecf6",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-10T00-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-10T00%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-10T00:00",
+      "kind": "event",
+      "sha256": "29f5a754b2bb984929d4afb36b4ee00b2435a04af3e90e030ab29c45dea1f858",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-10T06-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-10T06%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-10T06:00",
+      "kind": "event",
+      "sha256": "c50d653f9e5d490d90863f1528f8edc566a09d6d8a4fd59d17ca2c68e80840f0",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-10T12-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-10T12%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-10T12:00",
+      "kind": "event",
+      "sha256": "fa2295490313a521675a90a4dcbb8ffb8c37b03ac688df13f3bbbbee1a5bd020",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "event-2024-09-10T18-00.json",
+      "url": "https://single-runs-api.open-meteo.com/v1/forecast?latitude=37.9885022%2C38.292392&longitude=27.1783304%2C27.156953&hourly=rain%2Cprecipitation%2Csnowfall&models=ecmwf_ifs&run=2024-09-10T18%3A00&forecast_days=5&timezone=GMT&precipitation_unit=mm&cell_selection=land",
+      "run": "2024-09-10T18:00",
+      "kind": "event",
+      "sha256": "7b3de716eb9a9ecf1047aea01f9753b5da82a92c1d448b58be468810cedf756b",
+      "retrievedDate": "2026-10-08"
+    },
+    {
+      "file": "corine-maydanoz.json",
+      "url": "https://copernicus.discomap.eea.europa.eu/arcgis/rest/services/Corine/CLC2018_WM/MapServer/0/query?f=json&where=1%3D1&geometry=%7B%22points%22%3A%5B%5B27.173258951703634%2C37.98450521772162%5D%2C%5B27.174526813777724%2C37.98450521772162%5D%2C%5B27.175794675851815%2C37.98450521772162%5D%2C%5B27.17706253792591%2C37.98450521772162%5D%2C%5B27.1783304%2C37.98450521772162%5D%2C%5B27.17959826207409%2C37.98450521772162%5D%2C%5B27.180866124148185%2C37.98450521772162%5D%2C%5B27.182133986222276%2C37.98450521772162%5D%2C%5B27.183401848296366%2C37.98450521772162%5D%2C%5B27.173258951703634%2C37.985504463291214%5D%2C%5B27.174526813777724%2C37.985504463291214%5D%2C%5B27.175794675851815%2C37.985504463291214%5D%2C%5B27.17706253792591%2C37.985504463291214%5D%2C%5B27.1783304%2C37.985504463291214%5D%2C%5B27.17959826207409%2C37.985504463291214%5D%2C%5B27.180866124148185%2C37.985504463291214%5D%2C%5B27.182133986222276%2C37.985504463291214%5D%2C%5B27.183401848296366%2C37.985504463291214%5D%2C%5B27.173258951703634%2C37.98650370886081%5D%2C%5B27.174526813777724%2C37.98650370886081%5D%2C%5B27.175794675851815%2C37.98650370886081%5D%2C%5B27.17706253792591%2C37.98650370886081%5D%2C%5B27.1783304%2C37.98650370886081%5D%2C%5B27.17959826207409%2C37.98650370886081%5D%2C%5B27.180866124148185%2C37.98650370886081%5D%2C%5B27.182133986222276%2C37.98650370886081%5D%2C%5B27.183401848296366%2C37.98650370886081%5D%2C%5B27.173258951703634%2C37.987502954430404%5D%2C%5B27.174526813777724%2C37.987502954430404%5D%2C%5B27.175794675851815%2C37.987502954430404%5D%2C%5B27.17706253792591%2C37.987502954430404%5D%2C%5B27.1783304%2C37.987502954430404%5D%2C%5B27.17959826207409%2C37.987502954430404%5D%2C%5B27.180866124148185%2C37.987502954430404%5D%2C%5B27.182133986222276%2C37.987502954430404%5D%2C%5B27.183401848296366%2C37.987502954430404%5D%2C%5B27.173258951703634%2C37.9885022%5D%2C%5B27.174526813777724%2C37.9885022%5D%2C%5B27.175794675851815%2C37.9885022%5D%2C%5B27.17706253792591%2C37.9885022%5D%2C%5B27.1783304%2C37.9885022%5D%2C%5B27.17959826207409%2C37.9885022%5D%2C%5B27.180866124148185%2C37.9885022%5D%2C%5B27.182133986222276%2C37.9885022%5D%2C%5B27.183401848296366%2C37.9885022%5D%2C%5B27.173258951703634%2C37.989501445569594%5D%2C%5B27.174526813777724%2C37.989501445569594%5D%2C%5B27.175794675851815%2C37.989501445569594%5D%2C%5B27.17706253792591%2C37.989501445569594%5D%2C%5B27.1783304%2C37.989501445569594%5D%2C%5B27.17959826207409%2C37.989501445569594%5D%2C%5B27.180866124148185%2C37.989501445569594%5D%2C%5B27.182133986222276%2C37.989501445569594%5D%2C%5B27.183401848296366%2C37.989501445569594%5D%2C%5B27.173258951703634%2C37.99050069113919%5D%2C%5B27.174526813777724%2C37.99050069113919%5D%2C%5B27.175794675851815%2C37.99050069113919%5D%2C%5B27.17706253792591%2C37.99050069113919%5D%2C%5B27.1783304%2C37.99050069113919%5D%2C%5B27.17959826207409%2C37.99050069113919%5D%2C%5B27.180866124148185%2C37.99050069113919%5D%2C%5B27.182133986222276%2C37.99050069113919%5D%2C%5B27.183401848296366%2C37.99050069113919%5D%2C%5B27.173258951703634%2C37.991499936708784%5D%2C%5B27.174526813777724%2C37.991499936708784%5D%2C%5B27.175794675851815%2C37.991499936708784%5D%2C%5B27.17706253792591%2C37.991499936708784%5D%2C%5B27.1783304%2C37.991499936708784%5D%2C%5B27.17959826207409%2C37.991499936708784%5D%2C%5B27.180866124148185%2C37.991499936708784%5D%2C%5B27.182133986222276%2C37.991499936708784%5D%2C%5B27.183401848296366%2C37.991499936708784%5D%2C%5B27.173258951703634%2C37.99249918227838%5D%2C%5B27.174526813777724%2C37.99249918227838%5D%2C%5B27.175794675851815%2C37.99249918227838%5D%2C%5B27.17706253792591%2C37.99249918227838%5D%2C%5B27.1783304%2C37.99249918227838%5D%2C%5B27.17959826207409%2C37.99249918227838%5D%2C%5B27.180866124148185%2C37.99249918227838%5D%2C%5B27.182133986222276%2C37.99249918227838%5D%2C%5B27.183401848296366%2C37.99249918227838%5D%5D%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryMultipoint&inSR=4326&outSR=4326&outFields=Code_18&returnGeometry=true&geometryPrecision=7&maxAllowableOffset=0.00001&resultRecordCount=1000",
+      "kind": "land-cover",
+      "sha256": "a038c35fa5a8b07655d0b5dae9a5c712cfa2daf9217ad0f07edc7963f4711415",
+      "retrievedDate": "2026-10-08"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "istanbul-ayamama",
+    "cellCount": 10553,
+    "areaKm2": 68.41475937305289,
+    "areaChangeFraction": 0.0,
+    "geometryValid": true,
+    "clippedAtDomain": false,
+    "outletInBoundary": true,
+    "bounds": [
+      28.78458333306255,
+      40.97041666638666,
+      28.852083333063334,
+      41.13708333304959
+    ]
+  },
+  {
+    "id": "istanbul-kagithane",
+    "cellCount": 27306,
+    "areaKm2": 176.71580098837697,
+    "areaChangeFraction": 0.0,
+    "geometryValid": true,
+    "clippedAtDomain": false,
+    "outletInBoundary": true,
+    "bounds": [
+      28.780416666395833,
+      41.05374999971812,
+      29.02791666639871,
+      41.26624999971335
+    ]
+  },
+  {
+    "id": "istanbul-alibey-deresi",
+    "cellCount": 30044,
+    "areaKm2": 194.4568336014678,
+    "areaChangeFraction": 0.0,
+    "geometryValid": true,
+    "clippedAtDomain": false,
+    "outletInBoundary": true,
+    "bounds": [
+      28.687083333061416,
+      41.05541666638475,
+      28.96791666639801,
+      41.28041666637971
+    ]
+  }
+]
